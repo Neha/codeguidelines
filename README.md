@@ -148,10 +148,10 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 - Add captions , when required.
 
 ## Tools
-- (Lighthouse)[https://developers.google.com/web/tools/lighthouse/]
-- (caniuse.com)[https://caniuse.com/]
-- (contrastratio)[https://webaim.org/resources/contrastchecker/]
-- (Webpagetest)[https://www.webpagetest.org/]
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+- [caniuse.com](https://caniuse.com/)
+- [contrastratio](https://webaim.org/resources/contrastchecker/)
+- [Webpagetest](https://www.webpagetest.org/)
 
 ## Reactsjs
 Coming soon
