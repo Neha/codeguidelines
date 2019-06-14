@@ -17,42 +17,42 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 - **Code division** : divide the code into moduls and write CSS accrodingly. Keep the Global , base, and reset CSS on top always.
 - **Grouping** : Group the same style and modules together
 - Use CSS3 variables and write them on the top.
-- Do not turn off outline and focus property. They are important for accessibility
-- Use pre-processor such as SCSS, LESS. To have Modular CSS
-- Aviod using @import in CSS. As it do HTTP request.
-- Class Name Methodology : use BEM, SMACS or you can have your own Methodology too. The underline message is to have pattern to write the css.
-- Either use _ or - or camelCase. Do not merge all three way together. Which is the best? Depends on the methodology you are going to follow.
+- Do not turn off `outline` and `focus` property. They are important for accessibility
+- Use pre-processor such as `SCSS`, `LESS`. To have Modular CSS
+- Aviod using `@import` in CSS. As it do HTTP request.
+- Class Name Methodology : use `BEM, SMACS` or you can have your own Methodology too. The underline message is to have pattern to write the css.
+- Either use `_` or `-` or `camelCase`. Do not merge all three way together. Which is the best? Depends on the methodology you are going to follow.
 - No space between the key and colon and 1 space after the colon.
-- Do not forget to put ;.
+- Do not forget to put `;`.
 - Class names should start with smaller case and avoid starting the name with numerals.
 - Multiple properties always come in multiple line.
-- No measurement unit after 0.
+- No measurement unit after `0`.
 - `font-weight : bold` should be in numeric rather than 'bold', 'normal'. Reason is th web engine convert normal to 800. Basicailly convert string to numeric.
 - Color values should be in lowercase.
-- RGBa is faster than hexa.
+- `RGBa` is faster than `hexa`.
 - While implemting the colors in CSS. Use the chrome tools to test the contrast ratio for accessibility.
-- Do not control content from CSS such as uppercase, lowercase.Until it is important.
-- Avoid adding !important
+- Do not control content from CSS such as uppercase, lowercase. Until it is important.
+- Avoid adding `!important`.
 - Identify the critical CSS of the your pages and place it on the head
 - Class names should be very clear. But longer classname will affect the size of bundle.So, choose them wisely.
-- Classname should be self explanatory such as: .header-title , .header-body
-- If the style is going to be used globally do not bind it with the any module. Instead of writing .header-title-error write .error and so on.
+- Classname should be self explanatory such as: `.header-title` , `.header-body`.
+- If the style is going to be used globally do not bind it with the any module. Instead of writing `.header-title-error` write `.error` and so on.
 - Use the build packages to minify the css files.
 - Put comments only when and where it is required.
-- Use single-quotes when targeting attributes input[‘required’]
+- Use single-quotes when targeting attributes `input[‘required’]`.
 - Use inbuild attributes over making classes.
-- Avoid more than 3 nesting as specifity will be slow. CSS read from right to left #id – faster .classname – fast Tagname – fast Div span ul li .text – slow
+- Avoid more than 3 nesting as specifity will be slow.
 - Complier arrange the css properties alphabetical. If you can also do same good.
-- Short-hand properties vs writing explicit property padding:0 10px; padding-top:0; padding-bottom:0; vs padding-left:10px; padding-right: 10px;
+- Short-hand properties vs writing explicit property. `padding:0 10px;` will convert too `padding-top:0;` `padding-bottom:0;` and so on. So, define `padding-left:10px;` `padding-right: 10px;`.
 - Avoid styling HTML tags unless you are sure it will be like that
-- Typography: always have fall back font-family
-- Use rem for text, px for spacing, % for widths
+- **Typography**: always have fall back font-family
+- Use `rem` for text, px for spacing, `%` for widths
 - Responsive – use media queries.
 - Polyfills for auto-prefixer
 - Use single-quotes
-- Calc() function
-- Use CSS3 features such as flex, css grids, @support
-- Use css3 gradients etc over gradient-images.
+- `Calc()` function
+- Use CSS3 features such as `flex`, `css grids`, `@support`.
+- Use `css3 gradients` etc over images of gradients.
 - CSS Animations over JS animations.
 - To avoid the opacity issues cross browser use colors.
 - Focus on progressive enhancement.
@@ -69,7 +69,7 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 - Use placeholder,/span> for re-use and inheritance but be careful with placeholders. It can bloat css.
 - While using SCSS variables write default values.
 - Do not forget to use SCSS varabiles. Though now CSS3 also provide varaibles but to have cross-browser support. Use SCSS variables.
-- If the value will be used with calc() do not make the scss varaibles
+- If the value will be used with `calc()` do not make the scss varaibles
 - Use SCSS functions.
 - Keep eye on bloating css generation
 
