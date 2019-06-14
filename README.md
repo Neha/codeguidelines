@@ -6,12 +6,12 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 [Website](https://www.codeguidelines.com/)
 
 ## Agenda
-[CSS](#agenda)
-[SCSS](#scss)
-[HTML](#HTML)
-JAVASCRIPT
-IMAGES
-TOOLS
+- [CSS](#agenda)
+- [SCSS](#scss)
+- [HTML](#html)
+- [JAVASCRIPT](#javascript)
+- [IMAGES](#images)
+- [TOOLS](#tools)
 
 ## CSS
 - **Code division** : divide the code into moduls and write CSS accrodingly. Keep the Global , base, and reset CSS on top always.
@@ -27,7 +27,7 @@ TOOLS
 - Class names should start with smaller case and avoid starting the name with numerals.
 - Multiple properties always come in multiple line.
 - No measurement unit after 0.
-- 'font-weight : bold' should be in numeric rather than 'bold', 'normal'. Reason is th web engine convert normal to 800. Basicailly convert string to numeric.
+- `font-weight : bold` should be in numeric rather than 'bold', 'normal'. Reason is th web engine convert normal to 800. Basicailly convert string to numeric.
 - Color values should be in lowercase.
 - RGBa is faster than hexa.
 - While implemting the colors in CSS. Use the chrome tools to test the contrast ratio for accessibility.
@@ -148,10 +148,10 @@ TOOLS
 - Add captions , when required.
 
 ## Tools
-- (Lighthouse)[]
-- (caniuse.com)[]
-- (contrastratio)[]
-- (Webpagetest)[]
+- (Lighthouse)[https://developers.google.com/web/tools/lighthouse/]
+- (caniuse.com)[https://caniuse.com/]
+- (contrastratio)[https://webaim.org/resources/contrastchecker/]
+- (Webpagetest)[https://www.webpagetest.org/]
 
 ## Reactsjs
 Coming soon
