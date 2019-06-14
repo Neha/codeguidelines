@@ -1,11 +1,11 @@
-# Front-End Code Guidelines
+# :book: Front-End Code Guidelines :computer:
 ## A short code guidelines' guide for every front-end developer
 
 Hello Folks!! Working in Front-end domain from few years I know how important is to have a single source for the code guidelines. Here is some guidelines I learned over years. This is still work in progress. If you have any suggestion, questions or feedback reach me.
 
 [Website](https://www.codeguidelines.com/)
 
-## Agenda
+## :golf: Agenda
 - [CSS](#agenda)
 - [SCSS](#scss)
 - [HTML](#html)
@@ -157,13 +157,13 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 Coming soon
 
 ## UX
-Coming soon
+:construction: Coming soon
 
 ## SEO
-Coming soon
+:construction: Coming soon
 
 ## Accessibility
-Coming soon
+:construction: Coming soon
 
 ## :heart: Contributions
 Please raise the PR to contribute.
