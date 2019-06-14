@@ -3,7 +3,7 @@
 
 Hello Folks!! Working in Front-end domain from few years I know how important is to have a single source for the code guidelines. Here is some guidelines I learned over years. This is still work in progress. If you have any suggestion, questions or feedback reach me.
 
-(Website)[https://www.codeguidelines.com/]
+[Website](https://www.codeguidelines.com/)
 
 ## Agenda
 CSS
