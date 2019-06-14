@@ -6,9 +6,9 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 [Website](https://www.codeguidelines.com/)
 
 ## Agenda
-CSS
-SCSS
-HTML
+[CSS](#agenda)
+[SCSS](#scss)
+[HTML](#HTML)
 JAVASCRIPT
 IMAGES
 TOOLS
