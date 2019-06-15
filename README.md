@@ -60,17 +60,17 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 ## SCSS
 - Do not write scss in one file
 - Use the modular file approach.
-- Create the SCSS files for - Base, varibales, components, typography , layout etc.
+- Create the SCSS files for - `Base, varibales, components, typography , layout` etc.
 - Unless and until you don't have the requirement to have sepreate CSS files. Import all the SCSS files into one SCSS file.
 - SCSS is very popular because it support nested css. This helps in writing better organzied code avoid nesting exceed more than 3 level
-- Use & whereever you can
-- Use SCSS functions to make the colors dark, light etc
-- Use SCSS mixins. They are super helpful to have consisitency in your code.
-- Use placeholder,/span> for re-use and inheritance but be careful with placeholders. It can bloat css.
-- While using SCSS variables write default values.
+- Use `&` where ever you ar refering the parent.
+- Use `SCSS functions` to make the colors dark, light etc
+- Use SCSS `mixins`. They are super helpful to have consisitency in your code.
+- Use `placeholder`for re-use and inheritance but be careful with placeholders. It can bloat css.
+- While using SCSS `variables` write default values.
 - Do not forget to use SCSS varabiles. Though now CSS3 also provide varaibles but to have cross-browser support. Use SCSS variables.
 - If the value will be used with `calc()` do not make the scss varaibles
-- Use SCSS functions.
+- Use SCSS `functions`.
 - Keep eye on bloating css generation
 
 ## HTML
@@ -101,51 +101,65 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 
 ## Javascript
 - Always use a Javascript pattern to write your code.
-- Use ES6+ syntax.
-- Where ever you need this context use fat-arrow or Lambda functions.
-- Constructor should have all the initial setup values
+- Use `ES6+` syntax.
+- Where ever you need this context use `fat-arrow` or `Lambda` functions.
+- `Constructor` should have all the initial setup values
 - In your JS you should have minimal DOM manipulation.
 - Avoid hardcoding the values in Javascript.
-- Values that are not going to change should be declared with const such as API Keysand the name should be always in uppercase.
+- Values that are not going to change should be declared with const such as `API` Keys and the name should be always in uppercase.
 - Should have a constant file in your project.
-- All the API Keys and config key(s) should be in config files
-- In Javascript world, do not forget semi-colon
+- All the `API Keys` and config key(s) should be in config files.
+- In Javascript world, do not forget `semi-colon`.
 - Use indentation for code readbility.
 - Add comments only when required
-- For performance, cache the length of the arrays and objects. Espically if your code require iteratation on it.
-- variables and results,Use data-types such as arrays and objects wisely.
+- For performance, cache the length of the arrays and objects. Espcially if your code require iteratation on it.
+- variables and results,use data-types such as `arrays` and `objects` wisely.
 - Identify which data-type would be better in which operation. Eg: deleteing elements from array could be expensive as compare to the objects.
 - While creating the method or variables name. Use same pattern througout your code.
-- Avoid using many loops. Loops are expensive. Look into data and understand if for() , for..in(), for—each() or while could be better
+- Avoid using many loops. Loops are expensive. Look into data and understand if `for() , for..in(), for—each() or while` could be better
 - Write error handling code.
-- Use build tools – webpack, parcel etc
-- Use babel/Typescript , when you are using ES6+.
-- While doing the build always change the version number in your package.json
+- Use build tools – `Wbpack`, `ParcelJS` etc
+- Use `Babel/Typescript` , when you are using ES6+.
+- While doing the build always change the version number in your `package.json`.
 - Avoid adding/deleting style from Javascript.Instead use class names to add / remove styles.
 - Javascript can also lead to security issues. While writing your code especially if you are creating APIs keep the security testing in mind.
 - Write reusable code.
 - Avoid polluting Global scope
-- For block level scope always use /const.
-- Use shothand syntaxs only when necessary. Code readability is important too
-- use strict mode. If not using ES6+ or Typescript.
-- Use literals declaration where ever you can.
+- For block level scope always use `const or let`.
+- Use shorthand syntaxs only when necessary. Code readability is important too
+- Use strict mode. If not using `ES6+ or Typescript`.
+- Use `array.push()` to add values in array rather than anyother way.
 - Use functional programming.
-- Clean the console.log() and alert() before the deployment.
-- Make use of Tree shaking and chunk-loading by using build tool like Webpack to break the long code file.
-- Use modulas import/export to write modular javascript.
-- As Javascript don't have strict garbage collection, you need to be careful about what all is getting into the memory unused. Use weakmap or weakset.
-- Use strict equal signs while comparing the values.=== instead of ==
-- Always use Prettier or ESLint to format your code.
+- Clean the `console.log()` and `alert()` before the deployment.
+- Make use of `Tree shaking` and `chunk-loading` by using build tool like Webpack to break the long code file.
+- Use modulas `import/export` to write modular javascript.
+- As Javascript don't have strict garbage collection, you need to be careful about what all is getting into the memory unused. Use `weakmap` or `weakset`.
+- Use strict equal signs while comparing the values.`===` instead of `==`.
+- Always use `Prettier` or `ESLint` to format your code.
+- Use `objects` or `arrays` literals over using new keyword
+- Use `defer` or `async` for not blocking the browser.
+- Use `async/await` over `promise`.
+- While working with API data, always check if data exists or not.
+- Have one space in the `function()` signature.
+- Prefer `function()` over `variable functions`. As variable functions get hoist.
+- While using if, while code block the bracket should come in same line.
+- Use the shorthand property for defining the object property. eg: if key and value has same name. You can drop the value.
+- Do not use reserved keywords - such as `arguments`, `catch`, etc.
+- While checking the object exist or not do not check of `!null` only.
+- Avoid using `object.assign()`. Consider using `spread` operator.
+- use `single quotes` for the string
+- Spread the code into multiple lines.
+- Use `destructring`.
 
 ## Images
-- Use SVG over png, jpeg etc
+- Use SVG over `png, jpeg` etc
 - If the image is the part of the content. Do not make it the part of the JS and CSS. Keep it on markup.
-- Image should have the alt and title tags.
-- Use a library like font-awesome for icons
+- Image should have the `alt` and `title` tags.
+- Use a library like `font-awesome` for icons
 - Use image sprite for the small images.
 - Take advantage of lazy-loading while working on the site with heavy images.
-- Use correct tags figure, img.
-- Add captions , when required.
+- Use `correct tags figure, img`.
+- Add `captions` , when required.
 
 ## Tools
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
@@ -154,7 +168,7 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 - [Webpagetest](https://www.webpagetest.org/)
 
 ## Reactsjs
-Coming soon
+:construction: Coming soon
 
 ## UX
 :construction: Coming soon
