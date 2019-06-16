@@ -19,21 +19,21 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 - Use CSS3 variables and write them on the top.
 - Do not turn off `outline` and `focus` property. They are important for accessibility
 
-   \\ bad
-    * { outline: 0 }
+      \\ bad
+      * { outline: 0 }
     
-    \\ focus
-    * { focus: none }
+      \\ focus
+      * { focus: none }
 
 - Use pre-processor such as `SCSS`, `LESS`. To have Modular CSS
 - Aviod using `@import` in CSS. As it do HTTP request.
 - Class Name Methodology : use `BEM, SMACS` or you can have your own Methodology too. The underline message is to have pattern to write the css.
 - Either use `_` or `-` or `camelCase`. Do not merge all three way together. Which is the best? Depends on the methodology you are going to follow.
 
-    \\ bad
+      \\ bad
         .header-title .header_text .highlightText { color: #000; }
         
-     \\ Good
+      \\ Good
         .header-title .header-text .highlight-text { color: #000; }
         
         .header_title .header_text .highlight_text { color: #000; }
