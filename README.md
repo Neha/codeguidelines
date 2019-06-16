@@ -19,62 +19,80 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 - Use CSS3 variables and write them on the top.
 - Do not turn off `outline` and `focus` property. They are important for accessibility
 
-      \\ bad
-      ```css
-      *{ outline: 0 }
-      ```
+**Bad**
+```css
+ *{ outline: 0 }
+ ```
     
-      \\ focus
-       ```css
-      *{ focus: none }
-       ```
+**Good**
+```css
+ *{ focus: none }
+```
 - Use pre-processor such as `SCSS`, `LESS`. To have Modular CSS
 - Aviod using `@import` in CSS. As it do HTTP request.
 - Class Name Methodology : use `BEM, SMACS` or you can have your own Methodology too. The underline message is to have pattern to write the css.
 - Either use `_` or `-` or `camelCase`. Do not merge all three way together. Which is the best? Depends on the methodology you are going to follow.
 
-      \\ bad
-        .header-title .header_text .highlightText{ color: #000; }
+**Bad**
+```css
+.header-title .header_text .highlightText{ color: #000; }
+```
         
-      \\ Good
-        .header-title .header-text .highlight-text{color: #000;}
+**Good**
+```css
+ .header-title .header-text .highlight-text{color: #000;}
         
-        .header_title .header_text .highlight_text{color: #000;}
+ .header_title .header_text .highlight_text{color: #000;}
         
-        .headerTitle .headerText .highlightText{color: #000;}
-    
+ .headerTitle .headerText .highlightText{color: #000;}
+  ```  
     
 - No space between the key and colon and 1 space after the colon.
       
-      \\ bad
-        .header-title { color : #000;}
+**bad**
+```css
+.header-title { color : #000;}
+```
         
-      \\ Good
-        .header-title {color: #000;}
+**Good**
+```css
+.header-title {color: #000;}
+```
         
 - Do not forget to put `;`.
 - Class names should start with smaller case and avoid starting the name with numerals.
       
-      \\ bad
-        .Header-title{color: #000; }
+**bad**
+```css
+ .Header-title{color: #000; }
+ ```
+ ```css
+  .10margin{color: #000;}
+ ```
         
-        .10margin{color: #000;}
+**Good**
+```css
+.header-title{ color: #000;}
+ ```
         
-      \\ Good
-        .header-title{ color: #000;}
-        
-        .margin10{ color: #000;}
+ ```css
+ .margin10{ color: #000;}
+  ```
         
        
 - Multiple properties always come in multiple line.
       
-      \\ bad
-        .headerTitle .headerText .highlightText{color: #000;}
-        
-       \\ Good
-        .headerTitle,
-        .headerText, 
-        .highlightText{color: #000;}
+**bad**
+ ```css
+.headerTitle .headerText .highlightText{color: #000;}
+ ```
+ 
+**Good**
+ ```css
+ .headerTitle,
+ .headerText, 
+ .highlightText{color: #000;}
+ ```
       
 - No measurement unit after `0`.
       
