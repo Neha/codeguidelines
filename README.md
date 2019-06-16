@@ -20,11 +20,14 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 - Do not turn off `outline` and `focus` property. They are important for accessibility
 
       \\ bad
+      ```css
       *{ outline: 0 }
+      ```
     
       \\ focus
+       ```css
       *{ focus: none }
-
+       ```
 - Use pre-processor such as `SCSS`, `LESS`. To have Modular CSS
 - Aviod using `@import` in CSS. As it do HTTP request.
 - Class Name Methodology : use `BEM, SMACS` or you can have your own Methodology too. The underline message is to have pattern to write the css.
