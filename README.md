@@ -20,10 +20,10 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 - Do not turn off `outline` and `focus` property. They are important for accessibility
 
       \\ bad
-      * { outline: 0 }
+      *{ outline: 0 }
     
       \\ focus
-      * { focus: none }
+      *{ focus: none }
 
 - Use pre-processor such as `SCSS`, `LESS`. To have Modular CSS
 - Aviod using `@import` in CSS. As it do HTTP request.
@@ -31,23 +31,76 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 - Either use `_` or `-` or `camelCase`. Do not merge all three way together. Which is the best? Depends on the methodology you are going to follow.
 
       \\ bad
-        .header-title .header_text .highlightText { color: #000; }
+        .header-title .header_text .highlightText{ color: #000; }
         
       \\ Good
-        .header-title .header-text .highlight-text { color: #000; }
+        .header-title .header-text .highlight-text{color: #000;}
         
-        .header_title .header_text .highlight_text { color: #000; }
+        .header_title .header_text .highlight_text{color: #000;}
         
-        .headerTitle .headerText .highlightText { color: #000; }
+        .headerTitle .headerText .highlightText{color: #000;}
     
     
 - No space between the key and colon and 1 space after the colon.
+      
+      \\ bad
+        .header-title { color : #000;}
+        
+      \\ Good
+        .header-title {color: #000;}
+        
 - Do not forget to put `;`.
 - Class names should start with smaller case and avoid starting the name with numerals.
+      
+      \\ bad
+        .Header-title{color: #000; }
+        
+        .10margin{color: #000;}
+        
+      \\ Good
+        .header-title{ color: #000;}
+        
+        .margin10{ color: #000;}
+        
+       
 - Multiple properties always come in multiple line.
+      
+      \\ bad
+        .headerTitle .headerText .highlightText{color: #000;}
+        
+       \\ Good
+        .headerTitle,
+        .headerText, 
+        .highlightText{color: #000;}
+      
 - No measurement unit after `0`.
+      
+       \\ bad
+        .headerTitle{margin: 0px;}
+        
+       \\ Good
+        .headerTitle,
+         .headerText, 
+         .highlightText{color: #000;}
+      
 - `font-weight : bold` should be in numeric rather than 'bold', 'normal'. Reason is th web engine convert normal to 800. Basicailly convert string to numeric.
+
+      
+      \\ bad
+        .headerTitle{font-weight: normal;}
+        
+       \\ Good
+        .headerTitle{font-weight: 200;}
+         
+
 - Color values should be in lowercase.
+
+      \\ bad
+        .headerTitle{text-transfrom: UPPERCASE;}
+        
+       \\ Good
+        .headerTitle{text-transfrom: uppercase;}
+      
 - `RGBa` is faster than `hexa`.
 - While implemting the colors in CSS. Use the chrome tools to test the contrast ratio for accessibility.
 - Do not control content from CSS such as uppercase, lowercase. Until it is important.
@@ -56,6 +109,13 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 - Class names should be very clear. But longer classname will affect the size of bundle.So, choose them wisely.
 - Classname should be self explanatory such as: `.header-title` , `.header-body`.
 - If the style is going to be used globally do not bind it with the any module. Instead of writing `.header-title-error` write `.error` and so on.
+
+      \\ bad
+        .headerTitle .error{...}
+        
+       \\ Good
+        .error{...}
+      
 - Use the build packages to minify the css files.
 - Put comments only when and where it is required.
 - Use single-quotes when targeting attributes `input[‘required’]`.
