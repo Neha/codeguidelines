@@ -13,6 +13,13 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 - [IMAGES](#images)
 - [TOOLS](#tools)
 
+## Summary
+- Consistency
+- Code writing style
+- Readability
+- Performance
+- Embracing the new features
+
 ## CSS
 - **Code division** : divide the code into modules and write CSS accrodingly. Keep the Global , base, and reset CSS on top always.
 - **Grouping** : Group the same style and modules together
