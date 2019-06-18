@@ -96,31 +96,43 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
       
 - No measurement unit after `0`.
       
-       \\ bad
-        .headerTitle{margin: 0px;}
+**bad**
+```css
+.headerTitle{margin: 0px;}
+```
         
-       \\ Good
-        .headerTitle,
-         .headerText, 
-         .highlightText{color: #000;}
+**Good**
+```css
+.headerTitle,
+.headerText, 
+.highlightText{color: #000;}
+```
       
 - `font-weight : bold` should be in numeric rather than 'bold', 'normal'. Reason is th web engine convert normal to 800. Basicailly convert string to numeric.
 
       
-      \\ bad
-        .headerTitle{font-weight: normal;}
+**bad**
+```css 
+.headerTitle{font-weight: normal;}
+```
         
-       \\ Good
-        .headerTitle{font-weight: 200;}
+ **Good**
+ ```css
+ .headerTitle{font-weight: 200;}
+ ```
          
 
 - Color values should be in lowercase.
 
-      \\ bad
-        .headerTitle{text-transfrom: UPPERCASE;}
+**bad**
+```css 
+.headerTitle{text-transfrom: UPPERCASE;}
+```
         
-       \\ Good
-        .headerTitle{text-transfrom: uppercase;}
+**Good**
+```css 
+.headerTitle{text-transfrom: uppercase;}
+```
       
 - `RGBa` is faster than `hexa`.
 - While implementing the colors in CSS, use the chrome tools to test the contrast ratio for accessibility.
@@ -131,19 +143,86 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 - Classname should be self explanatory such as: `.header-title` , `.header-body`.
 - If the style is going to be used globally do not bind it with the any module. Instead of writing `.header-title-error` write `.error` and so on.
 
-      \\ bad
-        .headerTitle .error{...}
+**bad**
+```css 
+.headerTitle .error{...}
+```
         
-       \\ Good
-        .error{...}
+**Good**
+```css 
+.error{...}
+```
       
 - Use the build packages to minify the css files.
 - Put comments only when and where it is required.
 - Use single-quotes when targeting attributes `input[‘required’]`.
+
+**bad**
+```css 
+input["required"]`{...}
+```
+        
+**Good**
+```css 
+input[‘required’]`{...}
+
+```
+or 
+
+```css 
+input[required]`{...}
+```
+
 - Use inbuild attributes over making classes.
 - Avoid more than 3 nesting as specifity will be slow.
+
+**bad**
+```css 
+.header .header-content .header-left .header-title span{...}
+```
+        
+**Good**
+```css 
+.header 
+.header-title 
+span{...}
+```
 - Complier arranges the css properties alphabetically. If you can also do same, good.
 - Short-hand properties vs writing explicit property. `padding:0 10px;` will convert to `padding-top:0;` `padding-bottom:0;` and so on. So, define `padding-left:10px;` `padding-right: 10px;`.
+
+**bad**
+```css 
+header{padding:10px 10px 0 30px;}
+```
+*the above will result in following css*
+
+```css 
+header{
+ padding-top:10px;
+ padding-left:10px;
+ padding-bottom:0;
+ padding-right:30px;
+}
+```
+        
+**Good**
+```css 
+header{
+ padding-top:10px;
+ padding-left:10px;
+ padding-right:30px;
+}
+```
+*the above will result in following css*
+
+```css 
+header{
+ padding-top:10px;
+ padding-left:10px;
+ padding-right:30px;
+}
+```
+
 - Avoid styling HTML tags unless you are sure it will be like that
 - **Typography**: always have fall back font-family
 - Use `rem` for text, px for spacing, `%` for widths
