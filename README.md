@@ -28,10 +28,18 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 ```css
  *{ focus: none }
 ```
-- Use pre-processors such as `SCSS`, `LESS`. To have Modular CSS
-- Aviod using `@import` in CSS. As it do HTTP request.
+- Use pre-processors such as `SCSS`, `LESS`. 
+*WHY?* Pre-processors provides you lot of features which are missing from CSS. It helps
+you in writting the modular, and manageable code. Such as , mixins(), functions(), placeholders etc.
+
+- Aviod using `@import` in CSS. 
+*WHY?* @import behind the scene is doing HTTP request and bad for the performance.
+
 - Class Name Methodology : use `BEM, SMACS` or you can have your own Methodology too. The underline message is to have pattern to write the css.
-- Either use `_` or `-` or `camelCase`. Do not merge all three way together. Which is the best? Depends on the methodology you are going to follow.
+*WHY?* When you have different developers working on same project, there will always be visible difference in naming and coding guidelines. Especially classnames. So, by using some className Methodology such as BEM, it will restrict the devs 
+to follow one single way of decalring the classnames.
+
+- Either use `_` or `-` or `camelCase`. Do not merge all three way together Which is the best? Depends on the methodology you are going to follow.
 
 **Bad**
 ```css
