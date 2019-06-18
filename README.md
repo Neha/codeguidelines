@@ -159,18 +159,18 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 
 **bad**
 ```css 
-input["required"]`{...}
+input["required"]{...}
 ```
         
 **Good**
 ```css 
-input[‘required’]`{...}
+input[‘required’]{...}
 
 ```
 or 
 
 ```css 
-input[required]`{...}
+input[required]{...}
 ```
 
 - Use inbuild attributes over making classes.
@@ -187,7 +187,7 @@ input[required]`{...}
 .header-title 
 span{...}
 ```
-- Complier arranges the css properties alphabetically. If you can also do same, good.
+- Complier arranges the css properties alphabetically. If you can also do same, good.By doing this you are saving complier work.
 - Short-hand properties vs writing explicit property. `padding:0 10px;` will convert to `padding-top:0;` `padding-bottom:0;` and so on. So, define `padding-left:10px;` `padding-right: 10px;`.
 
 **bad**
@@ -223,7 +223,19 @@ header{
 }
 ```
 
-- Avoid styling HTML tags unless you are sure it will be like that
+- Avoid styling HTML tags unless you are sure it will be like that.
+
+**bad**
+```css 
+header{...}
+```
+  **Good**
+```css 
+.header{
+ ...
+}
+```
+
 - **Typography**: always have fall back font-family
 - Use `rem` for text, px for spacing, `%` for widths
 - Responsive – use media queries.
