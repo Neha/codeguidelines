@@ -123,7 +123,7 @@ to follow one single way of decalring the classnames.
 .highlightText{color: #000;}
 ```
       
-- `font-weight : bold` should be in numeric rather than 'bold', 'normal'. Reason is th web engine convert normal to 800. Basicailly convert string to numeric.
+- `font-weight : bold` should be in numeric rather than 'bold', 'normal'. Reason is the web engine convert normal to 400. Basicailly convert string to numeric.
 
       
 **bad**
