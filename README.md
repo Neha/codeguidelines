@@ -267,6 +267,7 @@ header{...}
 - Do not write scss in one file
 - Use the modular file approach.
 - Create the SCSS files for - `Base, varibales, components, typography , layout` etc.
+- Avoid using color name in color variables - `$bright-blue: blue`. Think of a case when you get a change request to replace blue color with red. You will end up assigning `$bright-blue: red` or create another variable `$bright-red: red` and change its usage across all files.
 - Unless and until you don't have the requirement to have sepreate CSS files, import all the SCSS files into one SCSS file.
 - SCSS is very popular because it supports nested css. This helps in writing better organzied code and avoid nesting exceed more than 3 level
 - Use `&` where ever you are refering the parent.
@@ -287,6 +288,7 @@ header{...}
 - when there is clear understanding about the what is section and div is for division of the page.
 - Avoid inline css & javascript.
 - Always have mobile first approach. Use viewport meta tag.
+- Use appropriate menifest file for PWA.
 - Do not put block elements into the inline elements.
 - Use block elements to wrap around every logical section of your page. Block elements provide structure to your page.
 - Use p tag for content.
@@ -295,29 +297,36 @@ header{...}
 - Always have a wrapper of your HTML page.
 - While creating a module which is not supported in HTML. Add role=””.
 - Follow the Heading hierarchy.
-- Put defer and async with blocking scripts
+- Put defer and async with blocking scripts, if possible include scripts as late as possible (down in body tag)
 - While writing footer text or legal text , use small tags
 - Avoid using the bold and italic from markup. These can be handle by css classes.
 - If you are sure about the HTML structure then avoid adding css classes at every level. You can write the style by targeting the parent level only
 - Doctype is important. Do not avoid them.
 - With Forms use legend.
+- Use `novalidate` to disable default validation from browser, when implementing custom validations
 - In input fields use placeholder property but use label too for accessibility.
+- Use `alt` text for `<img />`
 - Hiding text from the page is not good practice.
 - Add move to top functionality if your website has longer scroll.
 - Do not just rely on icons, add the label, alt, and title tag to make them accessible.
+- Use semantic HTML for better SEO & Accisibility (secion, article, header, footer, aside, h1 to h6, strong, em)
+- For custom tags use Uppercase for tagname. (e.g. <MyComponent />
 
 ## Javascript
-- Always use a Javascript pattern to write your code.
+- Always use a Javascript pattern to write your code. (i.e. Revealing Module Pattern)
 - Use `ES6+` syntax.
-- Where ever you need this context use `fat-arrow` or `Lambda` functions.
+- Where ever you need this context use `fat-arrow` or `Lambda` functions. (Caution: do not try to replace your existing functions with fat arrow syntax if it is using `this, super, arguments` or being called with `new` operator.
 - `Constructor` should have all the initial setup values
-- In your JS you should have minimal DOM manipulation.
+- In your JS you should have minimal DOM manipulation. If required, use document fragments or bulk update.
 - Avoid hardcoding the values in Javascript.
 - Values that are not going to change should be declared with const such as `API` Keys and the name should be always in uppercase.
 - Should have a constant file in your project.
+- Create constant objects using `Object.freeze(...)`
+- Immutability is important, use Array & Object methods which does not mutate the original instance (e.g. splice vs slice)
 - All the `API Keys` and config key(s) should be in config files.
+- Do not commit any type of credentials in code files.
 - In Javascript world, do not forget `semi-colon`.
-- Use indentation for code readbility.
+- Use indentation for code readbility. Setup your IDE/Editor to use a uniform setting (2 or 4 spaces/tabs).
 - Add comments only when required
 - For performance, cache the length of the arrays and objects. Espcially if your code require iteratation on it.
 - variables and results,use data-types such as `arrays` and `objects` wisely.
@@ -358,6 +367,11 @@ header{...}
 - use `single quotes` for the string
 - Spread the code into multiple lines.
 - Use `destructuring`.
+- Use `map` & `reduce` function for generating multiple values & single accumulated value respectively.
+- Do not use `__proto__` directly.
+- Use `bind` function to pass dynamic context for `this`.
+- Use array index in logic carefully as deleting any element would change index sequence and can have side effects.
+
 
 ## Images
 - Use SVG over `png, jpeg` etc
@@ -368,12 +382,14 @@ header{...}
 - Take advantage of lazy-loading while working on the site with heavy images.
 - Use `correct tags figure, img`.
 - Add `captions` , when required.
+- Compress `jpeg` files using available tools, it trims off un-necessory metadata
 
 ## Tools
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
 - [caniuse.com](https://caniuse.com/)
 - [contrastratio](https://webaim.org/resources/contrastchecker/)
 - [Webpagetest](https://www.webpagetest.org/)
+- [Frontend tools](http://frontendtools.com/)
 
 ## Reactsjs
 :construction: Coming soon
