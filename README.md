@@ -13,7 +13,7 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 - [IMAGES](#images)
 - [TOOLS](#tools)
 
-## Summary
+## :zap: Summary
 - Consistency
 - Code writing style
 - Readability
@@ -26,12 +26,12 @@ Hello Folks!! Working in Front-end domain from few years I know how important is
 - Use CSS3 variables and write them on the top.
 - Do not turn off `outline` and `focus` property. They are important for accessibility
 
-**Bad**
+:-1: **Bad**
 ```css
  *{ outline: 0 }
  ```
     
-**Good**
+:+1: **Good**
 ```css
  *{ focus: none }
 ```
@@ -48,12 +48,12 @@ to follow one single way of decalring the classnames.
 
 - Either use `_` or `-` or `camelCase`. Do not merge all three way together Which is the best? Depends on the methodology you are going to follow.
 
-**Bad**
+:-1: **Bad**
 ```css
 .header-title .header_text .highlightText{ color: #000; }
 ```
         
-**Good**
+:+1: **Good**
 ```css
  .header-title .header-text .highlight-text{color: #000;}
         
@@ -64,12 +64,12 @@ to follow one single way of decalring the classnames.
     
 - No space between the key and colon and 1 space after the colon.
       
-**bad**
+:-1: **bad**
 ```css
 .header-title { color : #000;}
 ```
         
-**Good**
+:+1: **Good**
 ```css
 .header-title {color: #000;}
 ```
@@ -77,7 +77,7 @@ to follow one single way of decalring the classnames.
 - Do not forget to put `;`.
 - Class names should start with lower case and avoid starting the name with numericals.
       
-**bad**
+:-1: **bad**
 ```css
  .Header-title{color: #000; }
  ```
@@ -85,7 +85,7 @@ to follow one single way of decalring the classnames.
   .10margin{color: #000;}
  ```
         
-**Good**
+:+1: **Good**
 ```css
 .header-title{ color: #000;}
  ```
@@ -97,12 +97,12 @@ to follow one single way of decalring the classnames.
        
 - Multiple properties always come in multiple lines.
       
-**bad**
+:-1: **bad**
  ```css
 .headerTitle .headerText .highlightText{color: #000;}
  ```
  
-**Good**
+:+1: **Good**
  ```css
  .headerTitle,
  .headerText, 
@@ -111,12 +111,12 @@ to follow one single way of decalring the classnames.
       
 - No measurement unit after `0`.
       
-**bad**
+:-1: **bad**
 ```css
 .headerTitle{margin: 0px;}
 ```
         
-**Good**
+:+1: **Good**
 ```css
 .headerTitle,
 .headerText, 
@@ -126,12 +126,12 @@ to follow one single way of decalring the classnames.
 - `font-weight : bold` should be in numeric rather than 'bold', 'normal'. Reason is the web engine convert normal to 400. Basicailly convert string to numeric.
 
       
-**bad**
+:-1: **bad**
 ```css 
 .headerTitle{font-weight: normal;}
 ```
         
- **Good**
+ :+1: **Good**
  ```css
  .headerTitle{font-weight: 200;}
  ```
@@ -139,12 +139,12 @@ to follow one single way of decalring the classnames.
 
 - Color values should be in lowercase.
 
-**bad**
+:-1: **bad**
 ```css 
 .headerTitle{text-transfrom: UPPERCASE;}
 ```
         
-**Good**
+:+1: **Good**
 ```css 
 .headerTitle{text-transfrom: uppercase;}
 ```
@@ -158,12 +158,12 @@ to follow one single way of decalring the classnames.
 - Classname should be self explanatory such as: `.header-title` , `.header-body`.
 - If the style is going to be used globally do not bind it with the any module. Instead of writing `.header-title-error` write `.error` and so on.
 
-**bad**
+:-1: **bad**
 ```css 
 .headerTitle .error{...}
 ```
         
-**Good**
+:+1: **Good**
 ```css 
 .error{...}
 ```
@@ -172,12 +172,12 @@ to follow one single way of decalring the classnames.
 - Put comments only when and where it is required.
 - Use single-quotes when targeting attributes `input[‘required’]`.
 
-**bad**
+:-1: **bad**
 ```css 
 input["required"]{...}
 ```
         
-**Good**
+:+1: **Good**
 ```css 
 input[‘required’]{...}
 
@@ -191,12 +191,12 @@ input[required]{...}
 - Use inbuild attributes over making classes.
 - Avoid more than 3 nesting as specifity will be slow.
 
-**bad**
+:-1: **bad**
 ```css 
 .header .header-content .header-left .header-title span{...}
 ```
         
-**Good**
+:+1: **Good**
 ```css 
 .header 
 .header-title 
@@ -205,7 +205,7 @@ span{...}
 - Complier arranges the css properties alphabetically. If you can also do same, good.By doing this you are saving complier work.
 - Short-hand properties vs writing explicit property. `padding:0 10px;` will convert to `padding-top:0;` `padding-bottom:0;` and so on. So, define `padding-left:10px;` `padding-right: 10px;`.
 
-**bad**
+:-1: **bad**
 ```css 
 header{padding:10px 10px 0 30px;}
 ```
@@ -220,7 +220,7 @@ header{
 }
 ```
         
-**Good**
+:+1: **Good**
 ```css 
 header{
  padding-top:10px;
@@ -240,11 +240,11 @@ header{
 
 - Avoid styling HTML tags unless you are sure it will be like that.
 
-**bad**
+:-1: **bad**
 ```css 
 header{...}
 ```
-  **Good**
+:+1: **Good**
 ```css 
 .header{
  ...
