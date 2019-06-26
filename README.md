@@ -371,6 +371,14 @@ header{...}
 - Do not use `__proto__` directly.
 - Use `bind` function to pass dynamic context for `this`.
 - Use array index in logic carefully as deleting any element would change index sequence and can have side effects.
+- Use debouncing in search.
+- Use Event Deligation (either by event bubling or capturing) instead of creating individual events
+at every nested element.
+- Use proper boilerplate (Directory structure) for making your code more understandable and easy to
+debug
+- Make a logger method that will console the data. Make this logger method in such a way that you can
+make it 'On' and 'Off' with the help of env variable.
+- Create a generic response handler packages that will be used for API response.
 
 
 ## Images
